@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(135deg, #615f857f 0%, #0e3356 100%);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.q-1 {
+  font-size: clamp(24px, 6vw, 40px);
+  margin: 20px 10px;
+}
+.w-1, .e-1 {
+  font-size: clamp(18px, 5vw, 28px);
+  margin: 15px 10px;
+}
+.t-1 img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Animated colorful headings */
+.animated-heading {
+  animation: headingColors 2.5s linear infinite alternate;
+}
+
+
+/* Buttons */
+#yesBtn, #noBtn {
+  position: absolute;
+  padding: 14px 26px;
+  font-size: clamp(16px, 4vw, 22px);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background: #23da7f;
+  left: 25%;
+  top: 65%;
+  box-shadow: 0 2px 20px #23da7f33;
+}
+#yesBtn.yes-animated {
+  animation: btnPulse 1s infinite;
+}
+@keyframes btnPulse {
+  0% { box-shadow: 0 2px 14px #23da7f44; }
+  50% { box-shadow: 0 2px 36px #23da7f88; }
+  100% { box-shadow: 0 2px 14px #23da7f44; }
+}
+
+#noBtn {
+  background: #da234b;
+  left: 65%;
+  top: 65%;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  #yesBtn, #noBtn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

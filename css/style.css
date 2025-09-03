@@ -1,0 +1,92 @@
+body {
+    background: #1b1c1c;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    max-width: 340px;
+   
+    margin: 80px auto;
+    background: #0f0e0e;
+    box-shadow: 0px 10px 20px white;
+    border-radius: 10px;
+  
+    padding: 30px 30px 25px 30px;
+}
+
+.title {
+    text-align: center;
+    color: #afb6bd;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    color: #576376;
+    font-size: 0.97rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #dde3ee;
+    border-radius: 6px;
+    background: #f8fafd00;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #7d8aa0;
+    outline: none;
+    background: #eef4fd;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    padding: 10px 0;
+    background: #87909a20;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background: #7c8c48be;
+}
+/* Floating ❤️ emojis */
+.emoji {
+    position: absolute;
+    bottom: -40px;
+    font-size: 22px;
+    animation: floatUp 8s linear infinite;
+    opacity: 0.8;
+    color: #ff4d6d;
+}
+
+/* random sizes */
+.emoji:nth-child(2) { left: 20%; font-size: 26px; animation-duration: 7s; }
+.emoji:nth-child(3) { left: 40%; font-size: 18px; animation-duration: 6s; }
+.emoji:nth-child(4) { left: 60%; font-size: 30px; animation-duration: 9s; }
+.emoji:nth-child(5) { left: 80%; font-size: 24px; animation-duration: 7.5s; }
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+    }
+}
